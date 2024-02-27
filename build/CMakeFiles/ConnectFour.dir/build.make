@@ -83,17 +83,65 @@ CMakeFiles/ConnectFour.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectFour.dir/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/main.cpp -o CMakeFiles/ConnectFour.dir/main.cpp.s
 
+CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o: CMakeFiles/ConnectFour.dir/flags.make
+CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o: /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/board/board.cpp
+CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o: CMakeFiles/ConnectFour.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o -MF CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o.d -o CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/board/board.cpp
+
+CMakeFiles/ConnectFour.dir/includes/board/board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConnectFour.dir/includes/board/board.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/board/board.cpp > CMakeFiles/ConnectFour.dir/includes/board/board.cpp.i
+
+CMakeFiles/ConnectFour.dir/includes/board/board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectFour.dir/includes/board/board.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/board/board.cpp -o CMakeFiles/ConnectFour.dir/includes/board/board.cpp.s
+
+CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o: CMakeFiles/ConnectFour.dir/flags.make
+CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o: /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/game/game.cpp
+CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o: CMakeFiles/ConnectFour.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o -MF CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o.d -o CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/game/game.cpp
+
+CMakeFiles/ConnectFour.dir/includes/game/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConnectFour.dir/includes/game/game.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/game/game.cpp > CMakeFiles/ConnectFour.dir/includes/game/game.cpp.i
+
+CMakeFiles/ConnectFour.dir/includes/game/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectFour.dir/includes/game/game.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/game/game.cpp -o CMakeFiles/ConnectFour.dir/includes/game/game.cpp.s
+
+CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o: CMakeFiles/ConnectFour.dir/flags.make
+CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o: /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/player/player.cpp
+CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o: CMakeFiles/ConnectFour.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o -MF CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o.d -o CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/player/player.cpp
+
+CMakeFiles/ConnectFour.dir/includes/player/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConnectFour.dir/includes/player/player.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/player/player.cpp > CMakeFiles/ConnectFour.dir/includes/player/player.cpp.i
+
+CMakeFiles/ConnectFour.dir/includes/player/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConnectFour.dir/includes/player/player.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/player/player.cpp -o CMakeFiles/ConnectFour.dir/includes/player/player.cpp.s
+
 # Object files for target ConnectFour
 ConnectFour_OBJECTS = \
-"CMakeFiles/ConnectFour.dir/main.cpp.o"
+"CMakeFiles/ConnectFour.dir/main.cpp.o" \
+"CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o" \
+"CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o" \
+"CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o"
 
 # External object files for target ConnectFour
 ConnectFour_EXTERNAL_OBJECTS =
 
 ConnectFour: CMakeFiles/ConnectFour.dir/main.cpp.o
+ConnectFour: CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o
+ConnectFour: CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o
+ConnectFour: CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o
 ConnectFour: CMakeFiles/ConnectFour.dir/build.make
 ConnectFour: CMakeFiles/ConnectFour.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ConnectFour"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ConnectFour"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ConnectFour.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
