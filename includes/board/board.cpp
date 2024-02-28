@@ -5,6 +5,7 @@ Board::Board()
     rows = 6;
     columns = 7;
     board = vector< vector<char> >(6, vector<char>(7, ' '));
+
 }
 
 Board::Board(int r, int c) 
@@ -18,6 +19,7 @@ vector < vector<char> > Board::getBoard() const
 {
     return board;
 }
+
 
 void Board::printBoard() const
 {
@@ -34,6 +36,7 @@ void Board::printBoard() const
 }
 
 void Board::addSymbolToBoard(int& row, int column, char sym)
+
 {
     for (int i = rows - 1; i >= 0; i--)
     {
@@ -49,4 +52,7 @@ void Board::addSymbolToBoard(int& row, int column, char sym)
 char Board::symbolAtPosition(int row, int column)
 {
     return board[row][column];
+            return;
+        }
+    }
 }

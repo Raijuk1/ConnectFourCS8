@@ -18,6 +18,7 @@
 
 4. git push -u origin [your branch name](to push your changes to your branch)
 
+
 We want to make sure that our main will be updated as often as possible so to do that 
 
 1. go to github and click on pull requests

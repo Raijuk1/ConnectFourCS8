@@ -112,6 +112,8 @@
       <change beforePath="$PROJECT_DIR$/includes/game/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/includes/game/game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/game/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/game/game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/game/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/includes/game/game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/game/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/game/game.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,6 +323,9 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.ConnectFour" />
+      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="CMake Application.ConnectFour" />
+      <item itemvalue="CMake Application.Continuous" />
       <item itemvalue="CMake Application.ContinuousBuild" />
       <item itemvalue="CMake Application.ContinuousConfigure" />
       <item itemvalue="CMake Application.ContinuousCoverage" />
@@ -330,6 +335,7 @@
       <item itemvalue="CMake Application.ContinuousTest" />
       <item itemvalue="CMake Application.ContinuousUpdate" />
       <item itemvalue="CMake Application.Continuous" />
+      <item itemvalue="CMake Application.Experimental" />
       <item itemvalue="CMake Application.ExperimentalBuild" />
       <item itemvalue="CMake Application.ExperimentalConfigure" />
       <item itemvalue="CMake Application.ExperimentalCoverage" />
@@ -350,7 +356,6 @@
       <item itemvalue="CMake Application.NightlyUpdate" />
       <item itemvalue="CMake Application.Nightly" />
       <item itemvalue="C/C++ File.main.cpp" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -367,6 +372,16 @@
       <workItem from="1709098699300" duration="28000" />
       <workItem from="1709098791585" duration="630000" />
       <workItem from="1709104202863" duration="3000" />
+    </task>
+    <task id="LOCAL-00001" summary="messed up when making branch">
+      <option name="closed" value="true" />
+      <created>1709095324240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709095324240</updated>
+    </task>
+      <workItem from="1709104202863" duration="6287000" />
     </task>
     <task id="LOCAL-00001" summary="messed up when making branch">
       <option name="closed" value="true" />
@@ -394,6 +409,17 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="messed up when making branch" />
