@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/cmake-build-debug/
 
 #############################################
 # Utility command for Experimental
@@ -217,17 +217,37 @@ build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 
 build cmake_object_order_depends_target_ConnectFour: phony || CMakeFiles/ConnectFour.dir
 
-build CMakeFiles/ConnectFour.dir/main.cpp.o: CXX_COMPILER__ConnectFour_unscanned_Debug /Users/nicholashadweh/CLionProjects/ConnectFourCS8/main.cpp || cmake_object_order_depends_target_ConnectFour
-  DEP_FILE = CMakeFiles/ConnectFour.dir/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/ConnectFour.dir
-  OBJECT_FILE_DIR = CMakeFiles/ConnectFour.dir
+build CMakeFiles/ConnectFour.dir/main.cpp.obj: CXX_COMPILER__ConnectFour_unscanned_Debug C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/main.cpp || cmake_object_order_depends_target_ConnectFour
+  DEP_FILE = CMakeFiles\ConnectFour.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ConnectFour.dir
+  OBJECT_FILE_DIR = CMakeFiles\ConnectFour.dir
+  TARGET_COMPILE_PDB = CMakeFiles\ConnectFour.dir\
+  TARGET_PDB = ConnectFour.pdb
 
-build CMakeFiles/ConnectFour.dir/game.cpp.o: CXX_COMPILER__ConnectFour_unscanned_Debug /Users/nicholashadweh/CLionProjects/ConnectFourCS8/game.cpp || cmake_object_order_depends_target_ConnectFour
-  DEP_FILE = CMakeFiles/ConnectFour.dir/game.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/ConnectFour.dir
-  OBJECT_FILE_DIR = CMakeFiles/ConnectFour.dir
+build CMakeFiles/ConnectFour.dir/includes/board/board.cpp.obj: CXX_COMPILER__ConnectFour_unscanned_Debug C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/includes/board/board.cpp || cmake_object_order_depends_target_ConnectFour
+  DEP_FILE = CMakeFiles\ConnectFour.dir\includes\board\board.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ConnectFour.dir
+  OBJECT_FILE_DIR = CMakeFiles\ConnectFour.dir\includes\board
+  TARGET_COMPILE_PDB = CMakeFiles\ConnectFour.dir\
+  TARGET_PDB = ConnectFour.pdb
+
+build CMakeFiles/ConnectFour.dir/includes/game/game.cpp.obj: CXX_COMPILER__ConnectFour_unscanned_Debug C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/includes/game/game.cpp || cmake_object_order_depends_target_ConnectFour
+  DEP_FILE = CMakeFiles\ConnectFour.dir\includes\game\game.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ConnectFour.dir
+  OBJECT_FILE_DIR = CMakeFiles\ConnectFour.dir\includes\game
+  TARGET_COMPILE_PDB = CMakeFiles\ConnectFour.dir\
+  TARGET_PDB = ConnectFour.pdb
+
+build CMakeFiles/ConnectFour.dir/includes/player/player.cpp.obj: CXX_COMPILER__ConnectFour_unscanned_Debug C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/includes/player/player.cpp || cmake_object_order_depends_target_ConnectFour
+  DEP_FILE = CMakeFiles\ConnectFour.dir\includes\player\player.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ConnectFour.dir
+  OBJECT_FILE_DIR = CMakeFiles\ConnectFour.dir\includes\player
+  TARGET_COMPILE_PDB = CMakeFiles\ConnectFour.dir\
+  TARGET_PDB = ConnectFour.pdb
 
 
 # =============================================================================
@@ -235,22 +255,25 @@ build CMakeFiles/ConnectFour.dir/game.cpp.o: CXX_COMPILER__ConnectFour_unscanned
 
 
 #############################################
-# Link the executable ConnectFour
+# Link the executable ConnectFour.exe
 
-build ConnectFour: CXX_EXECUTABLE_LINKER__ConnectFour_Debug CMakeFiles/ConnectFour.dir/main.cpp.o CMakeFiles/ConnectFour.dir/game.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
-  OBJECT_DIR = CMakeFiles/ConnectFour.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = ConnectFour
-  TARGET_PDB = ConnectFour.dbg
+build ConnectFour.exe: CXX_EXECUTABLE_LINKER__ConnectFour_Debug CMakeFiles/ConnectFour.dir/main.cpp.obj CMakeFiles/ConnectFour.dir/includes/board/board.cpp.obj CMakeFiles/ConnectFour.dir/includes/game/game.cpp.obj CMakeFiles/ConnectFour.dir/includes/player/player.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ConnectFour.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\ConnectFour.dir\
+  TARGET_FILE = ConnectFour.exe
+  TARGET_IMPLIB = libConnectFour.dll.a
+  TARGET_PDB = ConnectFour.pdb
 
 
 #############################################
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -262,7 +285,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/Matthew Moc/CLionProjects/ConnectFourCS8/cmake-build-debug/CPackSourceConfig.cmake""
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -274,7 +297,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
   DESC = Running tests...
   pool = console
   restat = 1
@@ -286,7 +309,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -297,7 +320,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/nicholashadweh/CLionProjects/ConnectFourCS8 -B/Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8" -B"C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -306,230 +329,232 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles/Experimental
+# Custom command for CMakeFiles\Experimental
 
 build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D Experimental
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D Experimental"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/Nightly
+# Custom command for CMakeFiles\Nightly
 
 build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D Nightly
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D Nightly"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/Continuous
+# Custom command for CMakeFiles\Continuous
 
 build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D Continuous
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D Continuous"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyMemoryCheck
+# Custom command for CMakeFiles\NightlyMemoryCheck
 
 build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyMemoryCheck
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyMemoryCheck"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyStart
+# Custom command for CMakeFiles\NightlyStart
 
 build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyStart
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyStart"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyUpdate
+# Custom command for CMakeFiles\NightlyUpdate
 
 build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyUpdate
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyUpdate"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyConfigure
+# Custom command for CMakeFiles\NightlyConfigure
 
 build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyConfigure
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyConfigure"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyBuild
+# Custom command for CMakeFiles\NightlyBuild
 
 build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyBuild
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyBuild"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyTest
+# Custom command for CMakeFiles\NightlyTest
 
 build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyTest
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyTest"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyCoverage
+# Custom command for CMakeFiles\NightlyCoverage
 
 build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyCoverage
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyCoverage"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyMemCheck
+# Custom command for CMakeFiles\NightlyMemCheck
 
 build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlyMemCheck
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlyMemCheck"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/NightlySubmit
+# Custom command for CMakeFiles\NightlySubmit
 
 build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D NightlySubmit
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D NightlySubmit"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalStart
+# Custom command for CMakeFiles\ExperimentalStart
 
 build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalStart
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalStart"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalUpdate
+# Custom command for CMakeFiles\ExperimentalUpdate
 
 build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalUpdate
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalUpdate"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalConfigure
+# Custom command for CMakeFiles\ExperimentalConfigure
 
 build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalConfigure
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalConfigure"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalBuild
+# Custom command for CMakeFiles\ExperimentalBuild
 
 build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalBuild
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalBuild"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalTest
+# Custom command for CMakeFiles\ExperimentalTest
 
 build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalTest
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalTest"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalCoverage
+# Custom command for CMakeFiles\ExperimentalCoverage
 
 build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalCoverage
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalCoverage"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalMemCheck
+# Custom command for CMakeFiles\ExperimentalMemCheck
 
 build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalMemCheck
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalMemCheck"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalSubmit
+# Custom command for CMakeFiles\ExperimentalSubmit
 
 build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ExperimentalSubmit
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalSubmit"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousStart
+# Custom command for CMakeFiles\ContinuousStart
 
 build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousStart
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousStart"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousUpdate
+# Custom command for CMakeFiles\ContinuousUpdate
 
 build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousUpdate
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousUpdate"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousConfigure
+# Custom command for CMakeFiles\ContinuousConfigure
 
 build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousConfigure
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousConfigure"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousBuild
+# Custom command for CMakeFiles\ContinuousBuild
 
 build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousBuild
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousBuild"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousTest
+# Custom command for CMakeFiles\ContinuousTest
 
 build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousTest
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousTest"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousCoverage
+# Custom command for CMakeFiles\ContinuousCoverage
 
 build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousCoverage
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousCoverage"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousMemCheck
+# Custom command for CMakeFiles\ContinuousMemCheck
 
 build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousMemCheck
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousMemCheck"
   pool = console
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousSubmit
+# Custom command for CMakeFiles\ContinuousSubmit
 
 build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest -D ContinuousSubmit
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Matthew Moc\CLionProjects\ConnectFourCS8\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousSubmit"
   pool = console
 
 # =============================================================================
 # Target aliases.
+
+build ConnectFour: phony ConnectFour.exe
 
 # =============================================================================
 # Folder targets.
@@ -537,9 +562,9 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 # =============================================================================
 
 #############################################
-# Folder: /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug
+# Folder: C:/Users/Matthew Moc/CLionProjects/ConnectFourCS8/cmake-build-debug
 
-build all: phony ConnectFour
+build all: phony ConnectFour.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -553,14 +578,14 @@ build all: phony ConnectFour
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CPack.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CPackComponent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Templates/CPackConfig.cmake.in /Users/nicholashadweh/CLionProjects/ConnectFourCS8/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CPack.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CPackComponent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CTestTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/DartConfiguration.tcl.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Templates/CPackConfig.cmake.in C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CPack.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CPackComponent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Templates/CPackConfig.cmake.in /Users/nicholashadweh/CLionProjects/ConnectFourCS8/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CPack.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CPackComponent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CTestTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/DartConfiguration.tcl.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Templates/CPackConfig.cmake.in C$:/Users/Matthew$ Moc/CLionProjects/ConnectFourCS8/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################
