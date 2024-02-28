@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Darwin-clang++"
-	BuildStamp="20240227-2136-Experimental"
+	BuildStamp="20240228-0128-Experimental"
 	Name="Gabes-Laptop.local"
 	Generator="ctest-3.24.2"
 	CompilerName="/usr/bin/clang++"
@@ -18,17 +18,17 @@
 	ProcessorCacheSize="131072"
 	NumberOfLogicalCPU="8"
 	NumberOfPhysicalCPU="8"
-	TotalVirtualMemory="8192"
+	TotalVirtualMemory="10240"
 	TotalPhysicalMemory="8192"
 	LogicalProcessorsPerPhysical="8"
 	ProcessorClockFrequency="0"
 	>
 	<Testing>
-		<StartDateTime>Feb 27 14:05 PST</StartDateTime>
-		<StartTestTime>1709071531</StartTestTime>
+		<StartDateTime>Feb 27 17:28 PST</StartDateTime>
+		<StartTestTime>1709083701</StartTestTime>
 		<TestList/>
-		<EndDateTime>Feb 27 14:05 PST</EndDateTime>
-		<EndTestTime>1709071531</EndTestTime>
+		<EndDateTime>Feb 27 17:28 PST</EndDateTime>
+		<EndTestTime>1709083701</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

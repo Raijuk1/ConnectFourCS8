@@ -523,6 +523,78 @@ ConnectFour/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/build
 .PHONY : ConnectFour/fast
 
+includes/board/board.o: includes/board/board.cpp.o
+.PHONY : includes/board/board.o
+
+# target to build an object file
+includes/board/board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o
+.PHONY : includes/board/board.cpp.o
+
+includes/board/board.i: includes/board/board.cpp.i
+.PHONY : includes/board/board.i
+
+# target to preprocess a source file
+includes/board/board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/board/board.cpp.i
+.PHONY : includes/board/board.cpp.i
+
+includes/board/board.s: includes/board/board.cpp.s
+.PHONY : includes/board/board.s
+
+# target to generate assembly for a file
+includes/board/board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/board/board.cpp.s
+.PHONY : includes/board/board.cpp.s
+
+includes/game/game.o: includes/game/game.cpp.o
+.PHONY : includes/game/game.o
+
+# target to build an object file
+includes/game/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o
+.PHONY : includes/game/game.cpp.o
+
+includes/game/game.i: includes/game/game.cpp.i
+.PHONY : includes/game/game.i
+
+# target to preprocess a source file
+includes/game/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/game/game.cpp.i
+.PHONY : includes/game/game.cpp.i
+
+includes/game/game.s: includes/game/game.cpp.s
+.PHONY : includes/game/game.s
+
+# target to generate assembly for a file
+includes/game/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/game/game.cpp.s
+.PHONY : includes/game/game.cpp.s
+
+includes/player/player.o: includes/player/player.cpp.o
+.PHONY : includes/player/player.o
+
+# target to build an object file
+includes/player/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o
+.PHONY : includes/player/player.cpp.o
+
+includes/player/player.i: includes/player/player.cpp.i
+.PHONY : includes/player/player.i
+
+# target to preprocess a source file
+includes/player/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/player/player.cpp.i
+.PHONY : includes/player/player.cpp.i
+
+includes/player/player.s: includes/player/player.cpp.s
+.PHONY : includes/player/player.s
+
+# target to generate assembly for a file
+includes/player/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConnectFour.dir/build.make CMakeFiles/ConnectFour.dir/includes/player/player.cpp.s
+.PHONY : includes/player/player.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -587,6 +659,15 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... ConnectFour"
+	@echo "... includes/board/board.o"
+	@echo "... includes/board/board.i"
+	@echo "... includes/board/board.s"
+	@echo "... includes/game/game.o"
+	@echo "... includes/game/game.i"
+	@echo "... includes/game/game.s"
+	@echo "... includes/player/player.o"
+	@echo "... includes/player/player.i"
+	@echo "... includes/player/player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
