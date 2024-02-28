@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8
-BuildDirectory: /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build
+SourceDirectory: /Users/ryancarrasco/Documents/CS008/ConnectFourCS8
+BuildDirectory: /Users/ryancarrasco/Documents/CS008/ConnectFourCS8/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Gabes-Laptop.local
+Site: Ryans-MacBook-Pro.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-clang++
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake" "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8"
-MakeCommand: /opt/homebrew/Cellar/cmake/3.24.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake" "/Users/ryancarrasco/Documents/CS008/ConnectFourCS8"
+MakeCommand: /opt/homebrew/Cellar/cmake/3.24.1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: /opt/homebrew/bin/git
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,13 +58,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /opt/homebrew/bin/git
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
 UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/clang++
-CompilerVersion: 15.0.0.15000100
+CompilerVersion: 15.0.0.15000040
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
