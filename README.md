@@ -43,9 +43,9 @@
 
 - 3. git commit -m "description of your changes" 
 
-- 4. git push (to push your changes to your branch)
+- 4. git push -u [your branch name](to push your changes to your branch)
 
 We want to make sure that our main will be updated as often as possible so to do that 
 
-1. 
+1. git checkout main
 
