@@ -47,5 +47,8 @@
 
 We want to make sure that our main will be updated as often as possible so to do that 
 
-1. git checkout main
+1. go to github and click on pull requests
 
+2. click on new pull request and in the first box click on the left where you want the changes to be applied and the second box is where the changes are coming from
+
+3. to apply the changes to your files you go do a git pull on your device to apply the changes made 
