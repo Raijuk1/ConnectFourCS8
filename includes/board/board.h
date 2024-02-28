@@ -12,7 +12,9 @@ class Board {
         void printBoard() const;
         void addSymbolToBoard(int& row, int column, char sym);
         char symbolAtPosition(int row, int column);
-        void addSymbolToBoard(int column, char sym);
+
+        int getRows();
+        int getColumns();
         
     private:
         vector< vector<char> > board;

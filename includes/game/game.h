@@ -2,37 +2,33 @@
 #define GAME_H
 #include <iostream>
 #include "../player/player.h"
+#include "../board/board.h"
 
 using std::cin, std::cout, std::vector, std::string;
 
 class Game{
 private:
-    int x, y;
+    Player p1, p2;
+    Player players[];
+    Board board;
+    int winCon;
 public:
     Game();
-    Game(int x, int y);
 
-    void setX(int x);
-    void setY(int y);
-    void getX();
-    void getY();
+    void setP1(Player p1);
+    void setP2(Player p2);
+    void getP1();
+    void getP2();
 
-    void check_move(int x, int y);
-    void check_lrDiagonal(int x, int y);
-    Player x, y;
-    //board
-public:
-    Game();
-    Game(Player x, Player y);
-
-    void setX(Player x);
-    void setY(Player y);
-    void getX();
-    void getY();
-
-    //bool checkMove(Player x, Player y);
-    void checkLrDiagonal(Player x, Player y);
-    //void playerMove();
+    void nextPlayerTurn();
+    void letsPlay();
+    bool checkWin(int row, int column, char playerSym);
+    bool isMoveValid(int column);
+    bool checkRlDiagonal(int row, int column, char playerSym);
+    bool checkLrDiagonal(int row, int column, char playerSym);
+    bool checkHorizontal(int row, char playerSym);
+    bool checkVertical(int column, char playerSym);
+    bool checkDraw();
 };
 
 #endif /* GAME_H */

@@ -52,7 +52,14 @@ void Board::addSymbolToBoard(int& row, int column, char sym)
 char Board::symbolAtPosition(int row, int column)
 {
     return board[row][column];
-            return;
-        }
-    }
+}
+
+int Board::getRows()
+{
+    return rows;
+}
+
+int Board::getColumns()
+{
+    return columns;
 }

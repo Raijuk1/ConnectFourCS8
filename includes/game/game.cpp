@@ -1,40 +1,209 @@
 #include "game.h"
 
-Game::Game(){}
-Game::Game(int x, int y){}
+Game::Game()
+{
+    letsPlay();
+}
 
-void check_move(int x, int y){
-    bool available = false;
+void Game::letsPlay(){
+    int move = 0;
+    char p1Symbol, p2Symbol;
+    int rowSize, columnSize;
 
-    cout << "Place piece in which column : ";
-    cin >> x;
+    cout << "Win condition : ";
+    cin >> winCon;
 
-    for (int i = y - 1; i >= 0; i--){
-        if (board[i][x] == ' '){
-            available = true;
-            break;
+    rowSize = winCon x 1.5;
+    columnSize = rowSize + 1;
+
+    cout << "Player one input your symbol : ";
+    cin >> p1Symbol;
+    p1.set_symbol(p1Symbol);
+
+    cout << "Player two input your symbol : ";
+    cin >> p2Symbol;
+    p2.set_symbol(p2Symbol);
+
+    board = Board(rowSize, columnSize);
+
+    bool win = false;
+    int currentIndex = 0;
+
+    players[0] = p1;
+    players[1] = p2;
+
+    while(!win && !checkDraw())
+    {
+        int row;
+        board.printBoard();
+
+        cout << "Which column to put piece : ";
+        cin >> move;
+        while(!isMoveValid(move))
+        {
+            cout << "Invalid move.\n";
+            cout << "Which column to put piece : ";
+            cin >> move;
         }
-        if (!avaliable){
-            cout << "Enter new column to place piece" << endl;
+        board.addSymbolToBoard(row, move, players[currentIndex].get_symbol());
+        if(checkWin(row, move, players[currentIndex].get_symbol()))
+        {
+            cout << "Player" << currentIndex + 1 << "wins\n";
+            win = true;
+
+        }
+        else
+        {
+            nextPlayerTurn(currentIndex);
         }
     }
-
-}
-void check_lrDiagonal(int x, int y){}
-Game::Game(Player x, Player y){}
-
-void playerMove(){
-    int move;
-
-    cout << "Which column to put piece : ";
-    cin >> move;
-
-    checkMove(move);
 }
 
-bool checkMove(int c){
-    return board[0][c] == ' ';
+void Game::nextPlayerTurn(int& currentIndex)
+{
+   if(currentIndex == 1)
+   {
+       currentIndex = 0;
+   }
+   else
+   {
+       currentIndex++;
+   }
 }
 
-void checkLrDiagonal(Player x, Player y){}
+void Game::isMoveValid(int column)
+{
+    return board[0][column] == ' ';
+}
 
+bool Game::checkRlDiagonal(int row, int column, char playerSym)
+{
+    int symInRows = 0;
+    int rowStart = row;
+    int columnStart = column;
+    int rowEnd = board.getRows();
+    int columnEnd = board.getColumns();
+
+    while(rowStart != 0 && columnStart != columnEnd)
+    {
+        columnStart++;
+        rowStart--;
+    }
+    while(rowStart != rowEnd && columnStart != -1)
+    {
+        if(board.symbolAtPosition(rowStart, columnStart) == playerSym)
+        {
+           symInRows++;
+           if(symInRows == winCon) {
+               return true
+           }
+        }
+        else
+        {
+            symInRows = 0;
+        }
+        columnStart--;
+        rowStart++;
+    }
+    return false;
+}
+
+bool Game::checkLrDiagonal(int row, int column, char playerSym)
+{
+    int symInRows = 0;
+    int rowStart = row;
+    int columnStart = column;
+    int rowEnd = board.getRows();
+    int columnEnd = board.getColumns();
+
+    while(rowStart != 0 && columnStart != 0)
+    {
+        columnStart--;
+        rowStart--;
+    }
+    while(rowStart != rowEnd && columnStart != columnEnd)
+    {
+        if(board.symbolAtPosition(rowStart, columnStart) == playerSym)
+        {
+            symInRows++;
+            if(symInRows == winCon) {
+                return true
+            }
+        }
+        else
+        {
+            symInRows = 0;
+        }
+        columnStart++;
+        rowStart++;
+    }
+    return false;
+}
+
+bool Game::checkHorizontal(int row, int column, char playerSym)
+{
+    int columnSize = board.getColumns();
+    int symInRows = 0;  //symInRows: how many symbols in a row
+
+    for(int i = 0; i < columnSize; i++)
+    {
+        if(board.symbolAtPosition(row,i) == playerSym)
+        {
+            symInRows++;
+            if(symInRows == winCon)
+            {
+                return true;
+            }
+        }
+        else
+        {
+            symInRows = 0;
+        }
+    }
+    return false;
+}
+
+bool Game::checkVertical(int row, int column, char playerSym)
+{
+    int rowSize = board.getRows();
+    int symInRows = 0;
+
+    for(int i = 0; i < rowSize; i++)
+    {
+        if(board.symbolAtPosition(i, column) == playerSym)
+        {
+            symInRow++;
+            if(symInRows == winCon)
+            {
+                return true;
+            }
+        }
+        else
+        {
+            symInRows = 0;
+        }
+    }
+    return false;
+}
+
+bool Game::checkWin(int row, int column, char playerSym)
+{
+    return(checkLrDiagonal(row, column, playerSym) ||
+           checkRlDiagonal(row, column, playerSym) ||
+           checkHorizontal(row, column, playerSym) ||
+           checkVertical(row, column, playerSym));
+}
+
+bool Game::checkDraw()
+{
+    int columnSize = board.getColumns();
+
+    for(int i = 0; i < columnSize; i++)
+    {
+        if(board.symbolAtPosition(0, i) == ' ')
+        {
+            return false;
+        }
+    }
+    return true;
+}

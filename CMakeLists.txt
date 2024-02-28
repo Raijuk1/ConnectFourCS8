@@ -4,7 +4,8 @@ project(ConnectFour VERSION 0.1.0 LANGUAGES C CXX)
 include(CTest)
 enable_testing()
 
-add_executable(ConnectFour main.cpp includes/board/board.cpp includes/game/game.cpp includes/player/player.cpp)
+add_executable(ConnectFour main.cpp includes/board/board.cpp includes/game/game.cpp includes/player/player.cpp
+        includes/game/game.h)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
