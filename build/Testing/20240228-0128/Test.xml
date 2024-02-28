@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Darwin-clang++"
 	BuildStamp="20240228-0128-Experimental"
-	Name="Ryans-MacBook-Pro.local"
-	Generator="ctest-3.24.1"
+	Name="Gabes-Laptop.attlocal.net"
+	Generator="ctest-3.24.2"
 	CompilerName="/usr/bin/clang++"
-	CompilerVersion="15.0.0.15000040"
+	CompilerVersion="15.0.0.15000100"
 	OSName="macOS"
-	Hostname="Ryans-MacBook-Pro.local"
-	OSRelease="14.1.2"
-	OSVersion="23B92"
+	Hostname="Gabes-Laptop.attlocal.net"
+	OSRelease="14.0"
+	OSVersion="23A344"
 	OSPlatform="arm64"
 	Is64Bits="1"
 	VendorString="IBM"
@@ -18,17 +18,17 @@
 	ProcessorCacheSize="131072"
 	NumberOfLogicalCPU="8"
 	NumberOfPhysicalCPU="8"
-	TotalVirtualMemory="1024"
+	TotalVirtualMemory="11264"
 	TotalPhysicalMemory="8192"
 	LogicalProcessorsPerPhysical="8"
 	ProcessorClockFrequency="0"
 	>
 	<Testing>
-		<StartDateTime>Feb 27 23:29 PST</StartDateTime>
-		<StartTestTime>1709105391</StartTestTime>
+		<StartDateTime>Feb 28 04:46 PST</StartDateTime>
+		<StartTestTime>1709124381</StartTestTime>
 		<TestList/>
-		<EndDateTime>Feb 27 23:29 PST</EndDateTime>
-		<EndTestTime>1709105391</EndTestTime>
+		<EndDateTime>Feb 28 04:46 PST</EndDateTime>
+		<EndTestTime>1709124381</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

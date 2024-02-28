@@ -13,7 +13,7 @@ void Game::letsPlay(){
     cout << "Win condition : ";
     cin >> winCon;
 
-    rowSize = winCon x 1.5;
+    rowSize = winCon * 1.5;
     columnSize = rowSize + 1;
 
     cout << "Player one input your symbol : ";
@@ -23,6 +23,7 @@ void Game::letsPlay(){
     cout << "Player two input your symbol : ";
     cin >> p2Symbol;
     p2.set_symbol(p2Symbol);
+    cout << endl << endl;
 
     board = Board(rowSize, columnSize);
 
@@ -36,8 +37,8 @@ void Game::letsPlay(){
     {
         int row;
         board.printBoard();
-
-        cout << "Which column to put piece : ";
+        cout << endl << endl;
+        cout << "Player" << currentIndex + 1 << " Which column to place piece : ";
         cin >> move;
         while(!isMoveValid(move))
         {
@@ -48,7 +49,9 @@ void Game::letsPlay(){
         board.addSymbolToBoard(row, move, players[currentIndex].get_symbol());
         if(checkWin(row, move, players[currentIndex].get_symbol()))
         {
-            cout << "Player" << currentIndex + 1 << "wins\n";
+            board.printBoard();
+            cout << endl;
+            cout << "Player" << currentIndex + 1 << " wins!\n\n";
             win = true;
 
         }
@@ -57,6 +60,9 @@ void Game::letsPlay(){
             nextPlayerTurn(currentIndex);
         }
     }
+    board.printBoard();
+    cout << endl;
+    cout << "Game is a Draw!" << endl;
 }
 
 void Game::nextPlayerTurn(int& currentIndex)
@@ -71,9 +77,10 @@ void Game::nextPlayerTurn(int& currentIndex)
    }
 }
 
-void Game::isMoveValid(int column)
+bool Game::isMoveValid(int column)
 {
-    return board[0][column] == ' ';
+    return board.getBoard()[0][column] == ' ';
+    // return board.symbolAtPosition(0,column) == ' ';
 }
 
 bool Game::checkRlDiagonal(int row, int column, char playerSym)
@@ -95,7 +102,7 @@ bool Game::checkRlDiagonal(int row, int column, char playerSym)
         {
            symInRows++;
            if(symInRows == winCon) {
-               return true
+               return true;
            }
         }
         else
@@ -127,7 +134,7 @@ bool Game::checkLrDiagonal(int row, int column, char playerSym)
         {
             symInRows++;
             if(symInRows == winCon) {
-                return true
+                return true;
             }
         }
         else
@@ -172,7 +179,7 @@ bool Game::checkVertical(int row, int column, char playerSym)
     {
         if(board.symbolAtPosition(i, column) == playerSym)
         {
-            symInRow++;
+            symInRows++;
             if(symInRows == winCon)
             {
                 return true;

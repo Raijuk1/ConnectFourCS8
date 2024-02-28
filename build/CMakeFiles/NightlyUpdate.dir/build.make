@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.24.1/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.24.2/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ryancarrasco/Documents/CS008/ConnectFourCS8
+CMAKE_SOURCE_DIR = /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryancarrasco/Documents/CS008/ConnectFourCS8/build
+CMAKE_BINARY_DIR = /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build
 
 # Utility rule file for NightlyUpdate.
 
@@ -67,7 +67,7 @@ include CMakeFiles/NightlyUpdate.dir/compiler_depend.make
 include CMakeFiles/NightlyUpdate.dir/progress.make
 
 CMakeFiles/NightlyUpdate:
-	/opt/homebrew/Cellar/cmake/3.24.1/bin/ctest -D NightlyUpdate
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/ctest -D NightlyUpdate
 
 NightlyUpdate: CMakeFiles/NightlyUpdate
 NightlyUpdate: CMakeFiles/NightlyUpdate.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/NightlyUpdate.dir/clean:
 .PHONY : CMakeFiles/NightlyUpdate.dir/clean
 
 CMakeFiles/NightlyUpdate.dir/depend:
-	cd /Users/ryancarrasco/Documents/CS008/ConnectFourCS8/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ryancarrasco/Documents/CS008/ConnectFourCS8 /Users/ryancarrasco/Documents/CS008/ConnectFourCS8 /Users/ryancarrasco/Documents/CS008/ConnectFourCS8/build /Users/ryancarrasco/Documents/CS008/ConnectFourCS8/build /Users/ryancarrasco/Documents/CS008/ConnectFourCS8/build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8 /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8 /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyUpdate.dir/depend
 
