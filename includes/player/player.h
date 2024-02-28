@@ -5,13 +5,13 @@
 using std::cin, std::cout, std::vector, std::string;
 
 class Player{
-    private:
-        char _symbol;
     public:
         Player();
         Player(char s);
         void set_symbol(char s);
         char get_symbol();
+    private:
+        char _symbol;
 };
 
 #endif /* PLAYER_H */
