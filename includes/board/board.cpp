@@ -4,7 +4,8 @@ Board::Board()
 {
     rows = 6;
     columns = 7;
-    board = vector< vector <char> >(6, vector<char>(7, ' '));
+    board = vector< vector<char> >(6, vector<char>(7, ' '));
+
 }
 
 Board::Board(int r, int c) 
@@ -34,13 +35,23 @@ void Board::printBoard() const
     }
 }
 
-void Board::addSymbolToBoard(int column, char sym)
+void Board::addSymbolToBoard(int& row, int column, char sym)
+
 {
     for (int i = rows - 1; i >= 0; i--)
     {
         if (board[i][column] == ' ')
         {
             board[i][column] = sym;
+            row = i;
+            return;
+        }
+    }
+}
+
+char Board::symbolAtPosition(int row, int column)
+{
+    return board[row][column];
             return;
         }
     }

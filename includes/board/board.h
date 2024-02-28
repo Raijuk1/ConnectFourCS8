@@ -10,6 +10,8 @@ class Board {
         Board(int r, int c);
         vector < vector<char> > getBoard() const;
         void printBoard() const;
+        void addSymbolToBoard(int& row, int column, char sym);
+        char symbolAtPosition(int row, int column);
         void addSymbolToBoard(int column, char sym);
         
     private:
