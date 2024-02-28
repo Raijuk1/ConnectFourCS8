@@ -12,8 +12,7 @@
     - git checkout -b [your branch name]
     - git branch to check which branch you are in
 
-2. git add [fileName you made changes to or created]
-- (reason why we don't want to do git add . because each of our systems uses different build or cmake files specfic to our system which we will have to restructure every time we pull if we added every file which git add . does)
+2. git add .
 
 3. git commit -m "description of your changes" 
 
