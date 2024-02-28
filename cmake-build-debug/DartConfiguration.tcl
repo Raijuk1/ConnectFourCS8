@@ -4,30 +4,31 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/gabrielforeman/CLionProjects/ConnectFourCS8
-BuildDirectory: /Users/gabrielforeman/CLionProjects/ConnectFourCS8/cmake-build-debug
+SourceDirectory: C:/Users/Matthew Moc/CLionProjects/ConnectFourCS8
+BuildDirectory: C:/Users/Matthew Moc/CLionProjects/ConnectFourCS8/cmake-build-debug
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Gabes-Laptop.local
+Site: LAPTOP-DUQFDLQP
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Darwin-c++
+BuildName: Win32-ninja
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
 SubmitURL: http://
+SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" "/Users/gabrielforeman/CLionProjects/ConnectFourCS8"
-MakeCommand: /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe" "C:/Users/Matthew Moc/CLionProjects/ConnectFourCS8"
+MakeCommand: "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -44,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: /opt/homebrew/bin/git
+GITCommand: C:/Program Files/Git/cmd/git.exe
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,13 +58,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /opt/homebrew/bin/git
+UpdateCommand: C:/Program Files/Git/cmd/git.exe
 UpdateOptions: 
 UpdateType: git
 
 # Compiler info
-Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
-CompilerVersion: 15.0.0.15000100
+Compiler: C:/mingw32/bin/c++.exe
+CompilerVersion: 7.3.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -80,7 +81,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: /usr/bin/gcov
+CoverageCommand: C:/mingw32/bin/gcov.exe
 CoverageExtraFlags: -l
 
 # Testing options
