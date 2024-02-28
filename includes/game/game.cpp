@@ -1,24 +1,20 @@
 #include "game.h"
 
 Game::Game(){}
-Game::Game(int x, int y){}
+Game::Game(Player x, Player y){}
 
-void check_move(int x, int y){
-    bool available = false;
+void playerMove(){
+    int move;
 
-    cout << "Place piece in which column : ";
-    cin >> x;
+    cout << "Which column to put piece : ";
+    cin >> move;
 
-    for (int i = y - 1; i >= 0; i--){
-        if (board[i][x] == ' '){
-            available = true;
-            break;
-        }
-        if (!avaliable){
-            cout << "Enter new column to place piece" << endl;
-        }
-    }
-
+    checkMove(move);
 }
-void check_lrDiagonal(int x, int y){}
+
+bool checkMove(int c){
+    return board[0][c] == ' ';
+}
+
+void checkLrDiagonal(Player x, Player y){}
 
