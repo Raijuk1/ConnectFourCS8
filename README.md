@@ -45,4 +45,7 @@
 
 - 4. git push (to push your changes to your branch)
 
-We want to make sure that our main will be updated as often as possible  
+We want to make sure that our main will be updated as often as possible so to do that 
+
+1. 
+
