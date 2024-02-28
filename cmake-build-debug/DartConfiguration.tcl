@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/nicholashadweh/CLionProjects/ConnectFourCS8
-BuildDirectory: /Users/nicholashadweh/CLionProjects/ConnectFourCS8/cmake-build-debug
+SourceDirectory: /Users/gabrielforeman/CLionProjects/ConnectFourCS8
+BuildDirectory: /Users/gabrielforeman/CLionProjects/ConnectFourCS8/cmake-build-debug
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Nicholass-MacBook-Pro.local
+Site: Gabes-Laptop.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-c++
@@ -21,14 +21,13 @@ LabelsForSubprojects:
 
 # Submission information
 SubmitURL: http://
-SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" "/Users/nicholashadweh/CLionProjects/ConnectFourCS8"
-MakeCommand: /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" "/Users/gabrielforeman/CLionProjects/ConnectFourCS8"
+MakeCommand: /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -64,7 +63,7 @@ UpdateType: git
 
 # Compiler info
 Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
-CompilerVersion: 15.0.0.15000040
+CompilerVersion: 15.0.0.15000100
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
