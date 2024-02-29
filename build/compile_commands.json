@@ -1,22 +1,26 @@
 [
 {
-  "directory": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.0 -o CMakeFiles/ConnectFour.dir/main.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/main.cpp",
-  "file": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/main.cpp"
+  "directory": "/Users/nicholashadweh/cs8/ConnectFourCS8/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/ConnectFour.dir/main.cpp.o -c /Users/nicholashadweh/cs8/ConnectFourCS8/main.cpp",
+  "file": "/Users/nicholashadweh/cs8/ConnectFourCS8/main.cpp",
+  "output": "CMakeFiles/ConnectFour.dir/main.cpp.o"
 },
 {
-  "directory": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.0 -o CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/board/board.cpp",
-  "file": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/board/board.cpp"
+  "directory": "/Users/nicholashadweh/cs8/ConnectFourCS8/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o -c /Users/nicholashadweh/cs8/ConnectFourCS8/includes/board/board.cpp",
+  "file": "/Users/nicholashadweh/cs8/ConnectFourCS8/includes/board/board.cpp",
+  "output": "CMakeFiles/ConnectFour.dir/includes/board/board.cpp.o"
 },
 {
-  "directory": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.0 -o CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/game/game.cpp",
-  "file": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/game/game.cpp"
+  "directory": "/Users/nicholashadweh/cs8/ConnectFourCS8/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o -c /Users/nicholashadweh/cs8/ConnectFourCS8/includes/game/game.cpp",
+  "file": "/Users/nicholashadweh/cs8/ConnectFourCS8/includes/game/game.cpp",
+  "output": "CMakeFiles/ConnectFour.dir/includes/game/game.cpp.o"
 },
 {
-  "directory": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.0 -o CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o -c /Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/player/player.cpp",
-  "file": "/Users/gabrielforeman/Desktop/CS/CS8/ConnectFourCS8/includes/player/player.cpp"
+  "directory": "/Users/nicholashadweh/cs8/ConnectFourCS8/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o -c /Users/nicholashadweh/cs8/ConnectFourCS8/includes/player/player.cpp",
+  "file": "/Users/nicholashadweh/cs8/ConnectFourCS8/includes/player/player.cpp",
+  "output": "CMakeFiles/ConnectFour.dir/includes/player/player.cpp.o"
 }
 ]
