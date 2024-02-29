@@ -60,9 +60,12 @@ void Game::letsPlay(){
             nextPlayerTurn(currentIndex);
         }
     }
-    board.printBoard();
-    cout << endl;
-    cout << "Game is a Draw!" << endl;
+    if(!win) {
+        board.printBoard();
+        cout << endl;
+        cout << "Game is a Draw!" << endl;
+    }
+    
 }
 
 void Game::nextPlayerTurn(int& currentIndex)
